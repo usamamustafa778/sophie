@@ -1,0 +1,75 @@
+.sidebar{
+    background-color: var(--white);
+    /* width:300px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.075);
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: -150px;
+    z-index: 10;
+}
+
+/* Profile Img */
+.user__profile{
+    height: 120px;
+    width: 120px;
+    padding:4px;
+    border-radius:100px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.158);
+}
+.user__profile > img{
+    height: 100%;
+    border-radius:100px;
+}
+
+/* User */
+.user{
+    text-align: center;
+}
+.username{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.username > img{
+    max-height: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Buttons */
+.sidebarbtn{
+    text-align: center;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.sidebarbtn:active{
+    transform: scale(1.05);
+}
+.btn-blue{
+    background-color: var(--blue);
+    color: var(--white);
+    
+}
+.btn-black-outlined{
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--black);
+}
+
+
+/* Media Query */
+@media screen and (max-width: 800px) {
+    .sidebar {
+      margin-top: 0;
+      padding: 20;
+    }
+  }
